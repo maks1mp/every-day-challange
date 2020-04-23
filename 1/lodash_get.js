@@ -1,9 +1,9 @@
 function lodash_get(obj, property) {
-    const propsMap = property.split('.');
+    const propsList = property.split('.');
     let temp = obj;
 
-    while (propsMap.length > 0) {
-        const prop = propsMap.shift();
+    while (propsList.length > 0) {
+        const prop = propsList.shift();
         
         if (temp[prop]) {
             temp = temp[prop];
